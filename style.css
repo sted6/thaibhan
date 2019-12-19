@@ -1,0 +1,339 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+/*CSS used to keep website aesthetically pleasing and responsive is below this comment*/
+@media only screen and (max-width: 600px) {
+  
+body {
+    max-width: 100vw;
+  }
+  
+  #find-us h2 {
+    color: white !important;
+    text-align: center;
+    padding-left: 0 !important;
+  }
+}
+
+html {
+    max-width: 100vw;
+}
+
+/*Responsive navbar style is below this comment*/
+#navbar {
+  background-image: linear-gradient(to right, white, tan);
+}
+
+/*Landing page style is below this comment*/
+#intro {
+  height: 100vh;
+  padding-top: 40vh;
+  font-family: Buda, cursive;
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid black;
+}
+
+#intro h1 {
+  background: rgb(0,0,0);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 350%;
+}
+
+#intro h2 {
+  background: rgb(225, 225, 225);
+  background: rgba(255, 255, 255, 0.7);
+  color: black;
+  margin-top: 7%;
+  font-size: 225%;
+}
+/*About us article style is below this comment*/
+#about-us {
+  font-family: Buda, cursive;
+  text-align: center;
+  background-image: linear-gradient(tan, white);
+  border-bottom: 2px solid black;
+}
+/*Menu article and menu title div styling is below this comment*/
+
+#menu-title {
+  font-family: Buda, cursive;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#menu {
+  min-height: 500px;
+  font-family: Buda, cursive;
+  text-align: center;
+  color: white;
+  background-image: url("https://images.pexels.com/photos/1907227/pexels-photo-1907227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid black;
+}
+
+/*Award image and Award1 image styling is below this comment*/
+#award {
+  margin-top: 5%;
+  z-index: 1;
+  width: 15em;
+  height: 15em;
+}
+
+#award1 {
+  margin-top: 5%;
+  z-index: 1;
+  width: 15em;
+  height: 15em;
+}
+
+#logo {
+  margin-top: 5%;
+  z-index: 1;
+  width: 15em;
+  height: 15em;
+}
+
+/*Class used to make elements hidden initially is below this comment*/
+
+
+/*Animation used to slide elements into view is below this page*/
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  visibility: visible;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+/*Class used to make entree descriptions not display initially*/
+.hidden {
+  display: none;
+}
+/*Styling for links in the menu article is below this comment*/
+#menu a {
+  cursor: pointer;
+}
+/*Find us article styling is below this comment*/
+#find-us {
+  text-align: left;
+  font-family: Buda, cursive;
+  background-image: url("https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  color: white;
+  border-bottom: 2px solid black;
+}
+/*Classes used to keep google maps iframe responsive is below this class*/
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  position: absolute;
+}
+/*Find us article header two text color is below this comment*/
+#find-us h2 {
+  color: black;
+}
+/*Reservations title div styling is below this comment*/
+#restitle {
+  font-family: Buda, cursive;
+  text-align: center;
+  background-color: tan;
+}
+
+/*Reservations article styling is below this comment*/
+#reservations {
+  font-family: Buda, cursive;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(to top, white, tan);
+}
+/*Date time picker widget styling used to make it work on codepen*/
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  width: 250px;
+}
+/*Image used in reservations article is below this comment*/
+#resimage {
+  margin-top: 15%;
+  max-width: 100%;
+}
+/*Menu item gallery styling is below this comment*/
+#menu-gallery {
+  font-family: Buda, cursive;
+  text-align: center;
+  background-color: black;
+}
+
+#menu-gallery a {
+  color: white;
+}
+/*Class used to make images in gallery responsive is below this comment*/
+.img-responsive {
+  height: 250px;
+}
+/*class used to animate responsive image*/
+.img-responsive-slideUp {
+  height: 250px;
+   animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+
+/*menu gallery stlying is below this comment*/
+
+figure.slideopen {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 220px;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+/*css used to create menu gallery animations is below this comment*/
+figure.slideopen * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+figure.slideopen img {
+  max-width: 100%;
+  position: relative;
+  opacity: 0.4;
+}
+
+figure.slideopen figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+figure.slideopen h2 {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  display: inline-block;
+  background: #000000;
+  -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+  transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+  padding: 12px 5px;
+  margin: 0;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+figure.slideopen h2 span {
+  font-weight: 800;
+}
+
+figure.slideopen:before {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #ffffff;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: rotate(110deg) translateY(-50%);
+  transform: rotate(110deg) translateY(-50%);
+}
+
+figure.slideopen a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+figure.slideopen.blue {
+  background: #123851;
+}
+
+figure.slideopen.blue h2 {
+  background: #0a212f;
+}
+
+figure.slideopen.red {
+  background: #581a14;
+}
+
+figure.slideopen.red h2 {
+  background: #36100c;
+}
+
+figure.slideopen:hover img,
+figure.slideopen.hover img {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.slideopen:hover h2,
+figure.slideopen.hover h2 {
+  -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+  transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+}
+
+figure.slideopen:hover:before,
+figure.slideopen.hover:before {
+  -webkit-transform: rotate(110deg) translateY(-150%);
+  transform: rotate(110deg) translateY(-150%);
+}
+
+#page-footer {
+  background-color: tan;
+  color: white;
+  margin-bottom: 50px;
+}
